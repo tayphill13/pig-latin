@@ -10,15 +10,14 @@
     var vowel = ['a','e','i','o','u']
 
     let vowelArray = letters.split(',');
-    // String.prototype.toArray(letters)
     console.log(vowelArray)
 
     if (!letters.match(/[a-z]/g)){
       return "This is not a word.";
     // check to see if the first letter is a vowel using bracket notation to see the first letter and comparing it to the array of vowels
-    } else if (letters === vowel){
+    } else if (vowelArray[0].map(vowel)) {
       console.log("test")
-      // return 'vowel';
+      return 'vowel';
     } 
   //   else if (letters.match()) { 
   //     return false;
