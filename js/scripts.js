@@ -5,22 +5,37 @@
   // loop
   // is this a vowel? branching with .match()
 
-var vowel = ['a','e','i','o','u']
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+  var characters = function(letters) {
+    var vowel = ['a','e','i','o','u']
 
-var characters = function(letters) {
-  if (letters.match(/[a-z]/g)){
-    return true;
-  } else {
-    return false;
-  };
+    let vowelArray = letters.split(',');
+    // String.prototype.toArray(letters)
+    console.log(vowelArray)
+
+    if (!letters.match(/[a-z]/g)){
+      return "This is not a word.";
+    // check to see if the first letter is a vowel using bracket notation to see the first letter and comparing it to the array of vowels
+    } else if (letters === vowel){
+      console.log("test")
+      // return 'vowel';
+    } 
+  //   else if (letters.match()) { 
+  //     return false;
+    
+  //   // We want to return false when there are no vowels in the letters
+  // };
 };
 
-  var letterType =function(kind) {
-  if (characters === true && letters === vowel)
-    return vowels;
-  };
+// console.log(characters)
+
+  // var letterType = function(letters) {
+  //   if (characters === true && letters === vowel){
+  //     return true;
+  //   }
+  // };
   // break the sentenece down into an array of words
-console.log(vowel);
+// console.log();
 
 
 // if (letter === 'a' || letter === 'b')
