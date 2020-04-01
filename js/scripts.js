@@ -1,7 +1,9 @@
 // business logic
 
-var letter =['a-z'];
+var letter =['a'];
 var capital=['A-Z'];
+var input = [];
+input.push('#word');
 
 // Array(InputString)
   // turn the input string into an array
@@ -9,13 +11,13 @@ var capital=['A-Z'];
   // is this a vowel? branching with .match()
 
 var characters = function(letters) {
-  if ("#word" === letter){
+  if (input === letter){
     return true;
   } else{
     return false;
   };
 };
-console.log(characters);
+console.log(input);
 
 
 // if (letter === 'a' || letter === 'b')
